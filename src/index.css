@@ -122,7 +122,7 @@ header ul li:hover {
 .upper-footer ul li {
   padding: 5px 0;
   font-size: 15px;
-  color: lightgray;
+  color: gray;
 }
 
 .upper-footer .large-logo {
@@ -170,4 +170,25 @@ button {
 .lower-footer .right-footer ul {
   list-style: none;
   gap: 20px;
+}
+
+/* footer hover animations */
+.upper-footer ul li:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.lower-footer button:hover {
+  background-color: #0093ff;
+  transition: all 0.3s;
+}
+
+.lower-footer h3:hover {
+  color: white;
+  transition: all 0.3s;
+}
+
+.lower-footer ul li:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
