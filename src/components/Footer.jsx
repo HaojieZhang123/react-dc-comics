@@ -66,15 +66,15 @@ const Footer = () => {
                 </div>
                 <div className="lower-footer">
 
-                    <div className="container">
+                    <div className="container d-flex justify-between align-center">
 
                         <div className="left-footer">
-                            <button>SIGN-UP NOW</button>
+                            <button>SIGN-UP NOW!</button>
                         </div>
 
-                        <div className="right-footer">
+                        <div className="right-footer d-flex">
                             <h3>FOLLOW US</h3>
-                            <ul>
+                            <ul className='d-flex'>
                                 <li>
                                     <a href="#">
                                         <img src={facebook} alt="facebook" />
