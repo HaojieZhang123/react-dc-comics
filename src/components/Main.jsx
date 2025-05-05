@@ -1,3 +1,4 @@
+import MainButtons from "./MainButtons"
 const Main = () => {
     return (
         <>
@@ -9,7 +10,7 @@ const Main = () => {
                 </div>
                 <div className="bg-blue">
                     <div className="container content">
-                        Componente aggiuntivo bonus
+                        <MainButtons />
                     </div>
                 </div>
             </main>
