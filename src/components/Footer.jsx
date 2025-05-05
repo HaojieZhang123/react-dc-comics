@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="upper-footer">
 
                     <div className="container d-flex">
-                        <div className="col-30">
+                        <div className="col-40 d-flex">
                             <div className="col-33">
                                 <h4>DC COMICS</h4>
                                 <ul>
@@ -56,7 +56,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-70">
+                        <div className="col-60">
                             <figure className="large-logo">
                                 <img src={largeLogo} alt="CD-logo-large" />
                             </figure>
