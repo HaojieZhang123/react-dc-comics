@@ -75,7 +75,8 @@ header ul li {
   align-items: center;
 }
 
-header ul li:hover {
+header ul li:hover,
+.active {
   color: #0282F9;
   text-decoration: underline;
   text-underline-offset: 60px;
