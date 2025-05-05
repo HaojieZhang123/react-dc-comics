@@ -15,8 +15,43 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 /* HEADER */
+header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4B525D;
+}
+
+header img {
+  width: 100px;
+  padding: 20px 0;
+}
+
+header ul {
+  display: flex;
+  list-style: none
+}
+
+header ul li {
+  margin-left: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+header ul li:hover {
+  color: #0093ff;
+  text-decoration: underline;
+  text-underline-offset: 60px;
+  text-decoration-thickness: 7px;
+  text-decoration-color: #0093ff;
+}
