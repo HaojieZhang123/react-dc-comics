@@ -1,8 +1,10 @@
-import React from 'react'
+import Comics from "./Comics"
 
 const ListComics = () => {
     return (
-        <div>ListComics</div>
+        <>
+
+        </>
     )
 }
 
