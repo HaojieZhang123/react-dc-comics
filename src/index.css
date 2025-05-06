@@ -38,6 +38,10 @@ a {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -97,6 +101,25 @@ header ul li:hover,
 
 .content {
   padding: 40px 0;
+}
+
+/* CARDS */
+.card {
+  width: calc(100% / 6);
+  padding: 20px 20px;
+  /* text-align: center; */
+  text-transform: uppercase;
+}
+
+.card-img {
+  max-width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-img img {
+  max-width: 100%;
 }
 
 /* BONUS BUTTONS AND ICONS */
