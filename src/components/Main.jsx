@@ -1,11 +1,12 @@
 import MainButtons from "./MainButtons"
+import ListComics from "./ListComics"
 const Main = () => {
     return (
         <>
             <main>
                 <div className="bg-black">
                     <div className="container content">
-                        <h2>--&gt; Content goes here &lt;--</h2>
+                        <ListComics />
                     </div>
                 </div>
                 <div className="bg-blue">
