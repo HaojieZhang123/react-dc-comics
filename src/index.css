@@ -216,7 +216,8 @@ button {
 }
 
 /* footer hover animations */
-.upper-footer ul li:hover {
+.upper-footer ul li:hover,
+.upper-footer ul li a.active-link {
   color: white;
   text-decoration: underline;
 }

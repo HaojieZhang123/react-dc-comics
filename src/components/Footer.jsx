@@ -4,7 +4,19 @@ import twitter from '../assets/img/footer-twitter.png'
 import youtube from '../assets/img/footer-youtube.png'
 import pinterest from '../assets/img/footer-pinterest.png'
 import periscope from '../assets/img/footer-periscope.png'
-const Footer = () => {
+
+// function that takes links array and create list items for every object in array
+const createLinks = (array) => {
+    return array.map((element) => {
+        return (
+            <li key={element.id}>
+                <a href={element.href} className={element.current ? 'active-link' : ''}>{element.label}</a>
+            </li>
+        );
+    });
+}
+
+const Footer = (props) => {
     return (
         <>
             <footer>
@@ -15,13 +27,8 @@ const Footer = () => {
                             <div className="col-33">
                                 <h4>DC COMICS</h4>
                                 <ul>
-                                    <li><a href="#">Characters</a></li>
-                                    <li><a href="#">Comics</a></li>
-                                    <li><a href="#">Movies</a></li>
-                                    <li><a href="#">TV</a></li>
-                                    <li><a href="#">Games</a></li>
-                                    <li><a href="#">Videos</a></li>
-                                    <li><a href="#">News</a></li>
+                                    {/* invoke createLinks function */}
+                                    {createLinks(props.links)}
                                 </ul>
                                 <h4>SHOP</h4>
                                 <ul>
