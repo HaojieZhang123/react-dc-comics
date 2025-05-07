@@ -155,22 +155,24 @@ const comics = [
     },
 ];
 
+// function that uses map to create a card for every object in array
+const createCard = (array) => {
+    return array.map((element) => {
+        return (
+            <ComicsCard
+                key={element.id}
+                title={element.title}
+                thumb={element.thumb}
+            />
+        );
+    });
+}
+
 const ListComics = () => {
     return (
         <>
             <div className="card-container d-flex flex-wrap">
-                <ComicsCard title={comics[0].title} thumb={comics[0].thumb} />
-                <ComicsCard title={comics[1].title} thumb={comics[1].thumb} />
-                <ComicsCard title={comics[2].title} thumb={comics[2].thumb} />
-                <ComicsCard title={comics[3].title} thumb={comics[3].thumb} />
-                <ComicsCard title={comics[4].title} thumb={comics[4].thumb} />
-                <ComicsCard title={comics[5].title} thumb={comics[5].thumb} />
-                <ComicsCard title={comics[6].title} thumb={comics[6].thumb} />
-                <ComicsCard title={comics[7].title} thumb={comics[7].thumb} />
-                <ComicsCard title={comics[8].title} thumb={comics[8].thumb} />
-                <ComicsCard title={comics[9].title} thumb={comics[9].thumb} />
-                <ComicsCard title={comics[10].title} thumb={comics[10].thumb} />
-                <ComicsCard title={comics[11].title} thumb={comics[11].thumb} />
+                {createCard(comics)}
             </div>
 
         </>
