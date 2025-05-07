@@ -42,6 +42,10 @@ a {
   flex-wrap: wrap;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -113,13 +117,34 @@ header ul li:hover,
 
 .card-img {
   max-width: 100%;
-  max-height: 200px;
+  aspect-ratio: 1/1;
   overflow: hidden;
   margin-bottom: 20px;
 }
 
 .card-img img {
   max-width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  text-decoration: underline;
+}
+
+/* LOAD BUTTON */
+.load-button button {
+  cursor: pointer;
+  padding: 10px 40px;
+  border: 3px solid #0282F9;
+  background-color: #0282F9;
+  color: white;
+  font-weight: bold;
+}
+
+.load-button button:hover {
+  background-color: transparent;
+  transition: all 0.3s;
 }
 
 /* BONUS BUTTONS AND ICONS */
@@ -190,7 +215,7 @@ header ul li:hover,
   color: white;
 }
 
-button {
+footer button {
   cursor: pointer;
   padding: 10px 20px;
   border: 3px solid #0282F9;

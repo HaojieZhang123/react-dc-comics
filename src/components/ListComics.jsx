@@ -175,6 +175,12 @@ const ListComics = () => {
                 {createCard(comics)}
             </div>
 
+            <div className="d-flex justify-center align-center load-button">
+                <button>
+                    LOAD MORE
+                </button>
+            </div>
+
         </>
     )
 }
